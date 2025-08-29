@@ -13,18 +13,14 @@ int main()
     int size;
     cin >> size;
     
-    if (size > 0) {
-      int* array = new int[size];
-      for (int i = 0; i < size; i++) {
-        cin >> array[i];
-      }
+    int* array = new int[size];
+    for (int i = 0; i < size; i++) {
+      cin >> array[i];
+    }
       
-      reverseArray (array, size);
-    }
-    
-    else {
-      cout << "Invalid size, please try again!" << endl;
-    }
+    reverseArray (array, size);
+
+    delete [] array;
     
     return 0;
 }
