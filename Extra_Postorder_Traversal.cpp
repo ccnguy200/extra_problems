@@ -8,15 +8,15 @@ class Node {
       Node *right;
       Node(int d) {
         data = d;
-        left = NULL;
-        right = NULL;
+        left = nullptr;
+        right = nullptr;
       }
 };
 
 class Solution {
 public:
     Node* insert(Node* root, int data) {
-        if (root == NULL) {
+        if (root == nullptr) {
             return new Node(data);
         } else {
             Node* cur;
@@ -44,7 +44,7 @@ public:
 int main() 
 {
     Solution Sol;
-    Node* root = NULL;
+    Node* root = nullptr;
     int size, data;
 
     cin >> size;
